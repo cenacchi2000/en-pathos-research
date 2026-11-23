@@ -61,3 +61,7 @@ Unpack `en-pathos-source.zip` into a new directory. Install the Python dependenc
 Run the temporal trainer with three positional arguments: media directory, MELD annotations, and output directory, plus --manifest manifests/temporal.json. Run the reply trainer with a base checkpoint, prepared JSONL and output directory. For the expanded mixed run add --train-examples 18366 --eval-examples 5154 --epochs 1 --retain-training-video. Exact checkpoint hashes and prompt locations are listed in [CHECKPOINTS.md](CHECKPOINTS.md).
 
 The archive includes implementation code and split metadata. Exact replay also requires the original corpus subsets, checkpoint weights and eligible evaluation records. Participant records and camera footage are excluded.
+
+## Contact
+
+For project enquiries, contact [msalbarelli@gmail.com](mailto:msalbarelli@gmail.com).
