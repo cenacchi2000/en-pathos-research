@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>En-Pathos | Conversation study</title><link rel="stylesheet" href="style.css?v=62"><script type="module" src="conversation.js?v=75"></script></head>
+<body><header class="masthead"><span>En-Pathos</span><label class="language-picker"><span>Game language</span><select id="game-language"><option value="en">English</option><option value="it">Italiano</option></select></label></header>
+<main><section class="intro"><h1>Have a live conversation</h1><p>Talk with an assistant for at least three turns, then rate the conversation.</p></section>
+<form id="group-selection"><h2>Choose your group</h2><p>Use the group number given by the study organizer.</p>
+<label for="group">Study group</label><select id="group" required><option value="">Select a group</option><option value="1">Group 1 · Experimental</option><option value="2">Group 2 · Control</option></select>
+<p id="study-recording-notice" class="privacy"></p>
+<label id="early-consent-label" hidden><input type="checkbox" id="early-consent"> I consent to take part in the study.</label>
+<button>Continue</button></form>
+<form id="intake" hidden><section id="persona-game" aria-labelledby="persona-heading">
+<h3 id="persona-heading">Dinner at Sam’s</h3>
+<p id="game-intro"></p>
+<div class="persona-card" id="game-scene">
+  <div id="dinner-table" class="dinner-table">
+    <div class="dinner-center"><span id="dinner-stage"></span></div>
+  </div>
+  <div class="game-panel" id="game-panel">
+    <p id="card-progress"></p>
+    <progress id="dinner-progress" max="15" value="0" aria-labelledby="card-progress"></progress>
+    <h4 id="card-title" tabindex="-1"></h4>
+    <p id="dinner-callback" hidden></p>
+    <p id="card-story"></p>
+    <p id="story-result" tabindex="-1" hidden></p>
+    <div id="game-actions" class="card-nav"></div>
+  </div>
+</div>
+<div id="game-deck" hidden>
+<h4 id="deck-heading" tabindex="-1">What your profile looks like</h4>
+<p id="deck-instructions"></p>
+<p id="profile-model-use"></p>
+<button type="button" id="select-all-profile" aria-controls="game-keeps profile-values"></button>
+<h5 id="profile-scenes-title"></h5><div id="game-keeps" class="profile-options"></div>
+<h5 id="profile-values-title"></h5><div id="profile-values" class="profile-options"></div>
+</div>
+</section>
+<div id="conversation-consent" hidden>
+<h2 id="control-start-title" hidden></h2>
+<p id="control-model-note" hidden></p>
+<label><input type="checkbox" id="consent" required disabled> <span id="consent-label">I consent to take part and open the conversation.</span></label>
+</div></form>
+<section id="chat" hidden><h2>Conversation</h2><div class="preview" id="camera" hidden><video id="preview" muted autoplay playsinline></video></div>
+<div id="messages" class="messages" aria-live="polite"></div>
+<form id="turn"><p>Click Record to speak. When you have finished, click Stop and send.</p><button type="button" id="send">Record voice and webcam</button> <button type="button" id="end" disabled>Finish and evaluate</button></form></section>
+<form id="evaluation" hidden><h2>How did the conversation feel?</h2><p>Rate the whole conversation. Choose “Not applicable” when there was no opportunity to judge an item.</p><div id="evaluation-questions"></div>
+<h3>Perceived Empathy of Technology Scale (PETS)</h3><p>Move each slider from 0 (strongly disagree) to 100 (strongly agree). Use the arrow keys for fine adjustments.</p>
+<div id="pets-questions"></div><p><a href="https://doi.org/10.1145/3613904.3642035">Schmidmaier et al., CHI 2024</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></p>
+<h3>EmoHarbor conversation rubric</h3>
+<p>Rate each dimension on its own 1–5 scale.</p>
+<div id="emoharbor-questions"></div>
+<p>Adapted from <a href="https://aclanthology.org/2026.acl-long.53/">Ye et al., EmoHarbor, Table 6, p. 1195</a>.</p>
+<button>Submit evaluation</button></form>
+<section id="thanks" hidden><h2>Thank you</h2><p>Your evaluation was saved.</p></section><p id="status" role="status"></p>
+</main></body></html>

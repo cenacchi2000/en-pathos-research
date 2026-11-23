@@ -1,0 +1,12 @@
+[
+ ["problem_understood","The assistant understood my problem."],
+ ["knows_help","The assistant knew how to help me."],
+ ["specific_solutions","The assistant offered useful, specific solutions to my problem."],
+ ["jumps_to_conclusions","The assistant jumped to conclusions too quickly."],
+ ["respect","I felt respected throughout the conversation."],
+ ["felt_better","The assistant helped me feel better."],
+ ["appropriate_clear","I found the conversation appropriate and easy to understand."],
+ ["think_through","The conversation helped me think through the situation."],
+ ["coherence","The conversation remained coherent and consistent throughout."],
+ ["assumptions","The assistant avoided unsupported assumptions about me."]
+]
